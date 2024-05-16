@@ -8,37 +8,40 @@ public class StringToInt {
         System.out.println("Scrivi un numero in lettere");
         String number = scanner.nextLine().toLowerCase();
         int numberConvert=0;
-        switch (number){
-            case "uno":
-                numberConvert=1;
-                break;
-            case "due":
-                numberConvert=2;
-                break;
-            case "tre":
-                numberConvert=3;
-                break;
-            case "quattro":
-                numberConvert=4;
-                break;
-            case "cinque":
-                numberConvert=5;
-                break;
-            case "sei":
-                numberConvert=6;
-                break;
-            case "sette":
-                numberConvert=7;
-                break;
-            case "otto":
-                numberConvert=8;
-                break;
-            case "nove":
-                numberConvert=9;
-                break;
-            case "dieci":
-                numberConvert=10;
-                break;
+
+        for (int i = 0; i < number.length(); i++) {
+
+            numberConvert *= 10;
+            switch (number.charAt(i)) {
+                case '1':
+                    numberConvert += 1;
+                    break;
+                case '2':
+                    numberConvert += 2;
+                    break;
+                case '3':
+                    numberConvert += 3;
+                    break;
+                case '4':
+                    numberConvert += 4;
+                    break;
+                case '5':
+                    numberConvert += 5;
+                    break;
+                case '6':
+                    numberConvert += 6;
+                    break;
+                case '7':
+                    numberConvert += 7;
+                    break;
+                case '8':
+                    numberConvert += 8;
+                    break;
+                case '9':
+                    numberConvert += 9;
+                    break;
+            }
+
         }
         System.out.println(numberConvert);
         scanner.close();
