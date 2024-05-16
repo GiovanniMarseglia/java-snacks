@@ -2,7 +2,7 @@ package org.learning;
 
 import java.util.Scanner;
 
-public class SumEven {
+public class SumOdd {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int sum=0,count;
