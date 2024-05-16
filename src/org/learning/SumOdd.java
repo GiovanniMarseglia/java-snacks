@@ -18,5 +18,6 @@ public class SumOdd {
         }
 
         System.out.println("La somma dei valori in pèosizione dispari è di: " + sum);
+        scanner.close();
     }
 }

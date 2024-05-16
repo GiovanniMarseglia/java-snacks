@@ -12,5 +12,6 @@ public class PariDispari {
         }else{
             System.out.println("Il numero è dispari, stamperò il numero successivo " + (number+1));
         }
+        scanner.close();
     }
 }
