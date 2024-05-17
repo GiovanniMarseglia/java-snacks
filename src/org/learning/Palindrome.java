@@ -7,12 +7,9 @@ public class Palindrome {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Inserisci un nume per sapere se è palindromo oppure no");
         String name = scanner.nextLine();
-        int count = name.length()-1;
         boolean flag = true;
         for (int i = 0; i < name.length()/2; i++) {
-            if (name.charAt(i) == name.charAt(count)){
-                count--;
-            }else{
+            if (name.charAt(i) != name.charAt(name.length()-1-i)){
                 flag = false;
                 break;
             }
