@@ -18,6 +18,6 @@ public class SecondToTime {
         }else{
             second = inputSecond;
         }
-        System.out.println(hour + ":" + minute + ":" + second);
+        System.out.println(String.format("%02d",hour) + ":" + String.format("%02d",minute) + ":" + String.format("%02d",second));
     }
 }
